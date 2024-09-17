@@ -12,11 +12,12 @@ class aluno{
         $this->tiposangue = $tiposangue;
         $this->matricula = $matricula;
         }
-   public function idade(){
-    $dataAtual = new Datetime();
-    $datanascimento = new Datetime($this->nascimento);
-    return $dataAtual->diff($datanascimento)->y;
-   }
+        
+    public function idade(){
+       $ano = substr($this->nascimento, 0, 4);
+       $atual = date("Y");
+       return $atual - $ano;
+    }
 }
 
 
