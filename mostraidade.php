@@ -4,7 +4,7 @@ include "aluno.php"
 
 $aluno = unserialize($_SESSION['aluno'])
 
-    echo $idade;
+    echo $nome,$idade;
 
 
 ?>
