@@ -1,10 +1,14 @@
 <?php
+
 session_start();
-include "aluno.php"
+include "aluno.php";
 
-$aluno = unserialize($_SESSION['aluno'])
+$aluno = unserialize($_SESSION['aluno']);
 
-    echo $nome,$idade;
+echo $aluno->nome;   
+echo ",";
+echo $aluno->idade();
+
 
 
 ?>
