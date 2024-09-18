@@ -22,14 +22,16 @@
 	$this->imagem = $imagem;
     }
     public function exibirInformacoes() {
-       echo '<div class="card" style="width: 18rem;">
+       echo <<<EOT
+       div class="card" style="width: 18rem;">
   <img class="card-img-top" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpIaBf4ceOFBvTwfhn0Yy8-JCN6xcB8tDzpaUKm7P1watYeSpj" alt="Imagem de capa do card">
   <div class="card-body">
-    <h5 class="card-title">coisa ruim</h5>
-    <p class="card-text">budega</p>
+    <h5 class="card-title">$this->nome </h5>
+    <p class="card-text">$this->descricao <br> $this->valor</p>
     <a href="#" class="btn btn-primary">vai pro krlh</a>
   </div>
-</div>';
+</div>
+EOT;
         }
 }
 
